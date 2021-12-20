@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2.0</title>
+    <link rel="stylesheet" href="forms.css">
+    <!--descrição-->
+    <meta name="description" content="formulario">
+    <!--autor-->
+    <meta name="author" content="Eduardo Muniz">
+    <!--link do Favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="faviconluciano.ico">
+    <!--link do estilo externo-->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <!--link dos icones-->
+    <script src=" https://kit.fontawesome.com/0cfef73daa.js " crossorigin="anonymous "></script>
+    <!--Bibliotecas Jquery-->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <nav id="aparecer">
+        <div class="sair"  id="fechar">
+            <i class="far fa-times-circle"></i>
+        </div>
+        <div class="cont-nav">
+            <a href="#"><p><i class="fab fa-whatsapp"></i> Contato</p></a>
+            <a href="#"><p><i class="fab fa-instagram"></i> Acompanhar </p></a>
+            <a href="../home2.html" target="_blank"><p><img src="/globe.png" alt="site"> Site Oficial</p></a>
+        </div>
+    </nav>
+    <form action="_post">
+        <header id="cont-1">
+            <div class="menu--hamb" id="abrir">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="cont-logo">
+                <img src="/cartaofrente1.png" alt="">
+            </div>
+        </header>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+                <!--nome completo-->
+                <div class="inputs-d">
+                    <label for="nomec">Nome Completo:<sup>*</sup></label>
+                    <input required type="text" placeholder="Ex.: João Gomes Da Silva">
+                </div>
+                <!--altura-->
+                <div class="inputs-d">
+                    <label for="altura">Altura:<sup>*</sup></label>
+                    <input required type="text" placeholder="Ex.: 1,62m">
+                </div>
+                <!--peso-->
+                <div class="inputs-d">
+                    <label for="peso">Peso:<sup>*</sup></label>
+                    <input required type="text" placeholder="Ex.: 60kg">
+                </div>
+                <!--idade-->
+                <div class="inputs-d">
+                    <label for="idade">Idade:<sup>*</sup></label>
+                    <input required type="text" placeholder="Ex.: 18">
+                </div>
+                <!--horario de trabalho-->
+                <div class="inputs-d">
+                    <label for="htrabalho">Horário de trabalho:<sup>*</sup></label>
+                    <input required type="text" placeholder="Ex.: 7:00 ás 11:00 e 14:00 ás 17:00">
+                </div>
+                <!--horario de treino-->
+                <div class="inputs-d">
+                    <label for="htreino">Horário de treino:<sup>*</sup></label>
+                    <input required type="text" placeholder="Ex.: 11:00 ás 14:00 e 19:00 ás 22:00">
+                </div>
+                <!--tempo livre para treino-->
+                <div class="inputs-d">
+                    <label for="tempolivre">Tempo livre para treino:<sup>*</sup></label>
+                    <input required type="text" placeholder="EX.: Minutos ou Horas">
+                </div>
+                <!--esforço fisico do trabalho -->
+                <div class="inputs-d inputs-checkbox">
+                    <h5>Considera o esforço físico do seu trabalho:<sup>*</sup></h5>
+
+                    <div class="check1">
+                        <label for="check1">Pouco:</label>
+                    <input required type="checkbox">
+                    </div>
+
+                    <div class="check1">
+                        <label for="check1">Médio:</label>
+                    <input required type="checkbox">
+                    </div>
+
+                    <div class="check1">
+                        <label for="check1">Alto:</label>
+                    <input required type="checkbox">
+                    </div>
+
+                    <div class="check1">
+                        <label for="check1">Exaustivo:</label>
+                    <input required type="checkbox">
+                    </div>
+                </div>
+        </fieldset>
+        <fieldset>
+            <legend>II - Dados Clínicos</legend>
+           <div class="cont-f2">
+            <h5>Possui plano de saúde?</h5>
+            <div class="in-2">
+                <label for="">Sim</label>
+                <input type="checkbox">
+            </div>
+            <div class="in-2">
+                <label for="">Não</label>
+                <input type="checkbox">
+            </div>
+           </div>
+           <div class="cont-f2">
+            <h5>Realiza exames com frequência?</h5>
+            <div class="in-2">
+                <label for="">Sim</label>
+                <input type="checkbox">
+            </div>
+            <div class="in-2">
+                <label for="">Não</label>
+                <input type="checkbox">
+            </div>
+           </div>
+           <div class="cont-f3">
+                <div class="in-33">
+                    <h5>Possui doenças na família?</h5>
+                    <div class="in-2">
+                        <label for="">Sim</label>
+                        <input type="checkbox">
+                    </div>
+                    <div class="in-2">
+                        <label for="">Não</label>
+                        <input type="checkbox">
+                    </div>
+                </div>
+                <div class="inputs-d">
+                    <label for="doen">Se sim, qual(is)?</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="cont-f3">
+                <div class="in-33">
+                    <h5>Possui doença diagnosticada?</h5>
+                    <div class="in-2">
+                        <label for="">Sim</label>
+                        <input type="checkbox">
+                    </div>
+                    <div class="in-2">
+                        <label for="">Não</label>
+                        <input type="checkbox">
+                    </div>
+                </div>
+                <div class="inputs-d">
+                    <label for="doen">Se sim, qual(is)?</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="cont-f3">
+                <div class="in-33">
+                    <h5>Possui algum incomodo que deseja relatar? (Ex.: dores no peito; dores nas articulações; dificuldade em respirar; pressão muito elevada após exercícios; etc.):</h5>
+                    <div class="in-2">
+                        <label for="">Sim</label>
+                        <input type="checkbox">
+                    </div>
+                    <div class="in-2">
+                        <label for="">Não</label>
+                        <input type="checkbox">
+                    </div>
+                </div>
+                <div class="inputs-d">
+                    <label for="doen">Se sim, qual(is)?</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="cont-f3">
+                <div class="in-33">
+                    <h5>Já utilizou algum ergogênico? (Ex.: estimulantes; esteróides; etc)</h5>
+                    <div class="in-2">
+                        <label for="">Sim</label>
+                        <input type="checkbox">
+                    </div>
+                    <div class="in-2">
+                        <label for="">Não</label>
+                        <input type="checkbox">
+                    </div>
+                </div>
+                <div class="inputs-d">
+                    <label for="doen">Se sim, qual(is)?</label>
+                    <input type="text">
+                </div>
+                <div class="inputs-d">
+                    <label for="doen">
+                        Relate o processo de ultilização, a quanto tempo foi e por quanto tempo durou:</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="cont-f3">
+                <div class="in-33">
+                    <h5>Faz uso de remédios controlados? Ex.: benzodiazepínicos, anticoncepcionais, remédios para pressão no geral, etc.</h5>
+                    <div class="in-2">
+                        <label for="">Sim</label>
+                        <input type="checkbox">
+                    </div>
+                    <div class="in-2">
+                        <label for="">Não</label>
+                        <input type="checkbox">
+                    </div>
+                </div>
+                <div class="inputs-d">
+                    <label for="doen">Se sim, qual(is)?</label>
+                    <input type="text">
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>III - Hábitos Alimentares e Sociais</legend>
+            <div class="inputs-d f4">
+                <label for="alergia">Alergia ou intolerância alimentar:</label>
+                <input type="text" placeholder="Explique um pouco">
+            </div>
+            <div class="inputs-d f4 f5">
+                <label for="agua">Água (quant. Diária):</label>
+                <input type="text" placeholder="Ex.: 4.5L">
+            </div>
+            <div class="cont-f2 f5">
+                <h5>Etilismo (consumo de álcool):</h5>
+                <div class="in-2 in-5 in-6">
+                    <label for="">Sim</label>
+                    <input type="checkbox">
+                </div>
+                <div class="in-2 in-5">
+                    <label for="">Não</label>
+                    <input type="checkbox">
+                </div>
+                <div class="in-2 in-5">
+                    <label for="">Apenas Socialmente</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+            <div class="cont-f2 f5">
+                <h5>Fumante:</h5>
+                <div class="in-2 in-5 in-6">
+                    <label for="">Sim</label>
+                    <input type="checkbox">
+                </div>
+                <div class="in-2 in-5">
+                    <label for="">Não</label>
+                    <input type="checkbox">
+                </div>
+                <div class="in-2 in-5">
+                    <label for="">Apenas Socialmente</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+            <div class="cont-f2 f5">
+                <h5>Sono(quant. diária de sono):</h5>
+                <div class="in-2 in-5 in-6">
+                    <label for="">Até 4hrs/dia</label>
+                    <input type="checkbox">
+                </div>
+                <div class="in-2 in-5">
+                    <label for="">Até 6hrs/dia</label>
+                    <input type="checkbox">
+                </div>
+                <div class="in-2 in-5">
+                    <label for="">Até 8hrs/dia</label>
+                    <input type="checkbox">
+                </div>
+                <div class="in-2 in-5">
+                    <label for="">Mais 8hrs/dia</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+            <div class="inputs-d f4 f5">
+                <label for="alergia">Quantas refeições costuma fazer diariamente?</label>
+                <input type="number">
+            </div>
+            <div class="inputs-d f4 f5">
+                <label for="alergia">Quantas refeições, de acordo com tua rotina de vida e trabalho, ficariam confortáveis para teu planjamento?</label>
+                <input type="number">
+            </div>
+            <div class="obs">
+                <h4>Observações:</h4>
+            </div>
+            <div class="cont-obs f5">
+                <div class="obs2">
+                    <label for="">Alimentos que gosta:</label>
+                    <textarea name="gosta" id="gosta"></textarea>
+                </div>
+                <div class="obs2">
+                    <label for="">Alimentos que não gosta:</label>
+                    <textarea name="gosta" id="gosta"></textarea></div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>IV - Objetivos:</legend>
+            <div class="inputs-d cont-field4">
+                <label for="altura">Descreva, do mais importante ao menos importante, quais os grupos musculares você gostaria de evoluir mais? E se possuir, quais grupos musculares você não gostaria de evoluir de jeito nenhum?<sup>*</sup></label>
+                <input required type="text" placeholder="Explique um pouco.">
+            </div>
+            <div class="inputs-d cont-field4">
+                <label for="altura">Descreva brevemente seus objetivos na consultoria com relação ao físico que almeja, e me envie algumas fotos de pessoas que você gostaria de possuir um físico na mesma linha.<sup>*</sup></label>
+                <input required type="text" placeholder="Explique um pouco.">
+            </div>
+        </fieldset>
+        <footer class="botoes">
+            <button>Enviar Dados!</button>
+        </footer>
+    </form>
+</body>
+</html>
