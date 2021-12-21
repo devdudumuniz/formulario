@@ -9,7 +9,7 @@
 
     /*tamanhos*/
     --tam-enviar: clamp(0.5vw, 3.5vw, 6vw);
-    --tam-anamnese:clamp(0.5vw, 12vw, 12vw);
+    --tam-anamnese:clamp(0.5vw, 9vw, 12vw);
     --tam-titulos: clamp(0.5vw, 4vw, 6vw);
     --tam-label: clamp(0.5vw, 2.5vw, 6vw);
     --tam-iconesG: clamp(0.5vw, 5vw, 6vw);
