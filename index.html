@@ -13,14 +13,14 @@
     <!--link do Favicon-->
     <link rel="shortcut icon" type="image/x-icon" href="faviconluciano.ico">
     <!--link do estilo externo-->
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="home2.css">
     <!--link dos icones-->
     <script src=" https://kit.fontawesome.com/0cfef73daa.js " crossorigin="anonymous "></script>
     <!--Bibliotecas Jquery-->
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-    <script src="index.js"></script>
+    <script src="/forms.js"></script>
 </head>
 <body>
     <nav id="aparecer">
@@ -45,7 +45,7 @@
         <fieldset>
             <legend>Dados Pessoais</legend>
                 <!--nome completo-->
-                <div class="inputs-d">
+                <div class="inputs-d primeiro-input">
                     <label for="nomec">Nome Completo:<sup>*</sup></label>
                     <input required type="text" placeholder="Ex.: João Gomes Da Silva">
                 </div>
@@ -84,47 +84,47 @@
                     <h5>Considera o esforço físico do seu trabalho:<sup>*</sup></h5>
 
                     <div class="check1">
-                        <label for="check1">Pouco:</label>
+                        <label for="pouco">Pouco:</label>
                     <input required type="checkbox">
                     </div>
 
                     <div class="check1">
-                        <label for="check1">Médio:</label>
+                        <label for="medio">Médio:</label>
                     <input required type="checkbox">
                     </div>
 
                     <div class="check1">
-                        <label for="check1">Alto:</label>
+                        <label for="alto">Alto:</label>
                     <input required type="checkbox">
                     </div>
 
                     <div class="check1">
-                        <label for="check1">Exaustivo:</label>
+                        <label for="exaustivo">Exaustivo:</label>
                     <input required type="checkbox">
                     </div>
                 </div>
         </fieldset>
         <fieldset>
             <legend>II - Dados Clínicos</legend>
-           <div class="cont-f2">
+           <div class="cont-f2 primeiro-input">
             <h5>Possui plano de saúde?</h5>
             <div class="in-2">
-                <label for="">Sim</label>
+                <label for="possuiS">Sim</label>
                 <input type="checkbox">
             </div>
             <div class="in-2">
-                <label for="">Não</label>
+                <label for="possuiN">Não</label>
                 <input type="checkbox">
             </div>
            </div>
            <div class="cont-f2">
             <h5>Realiza exames com frequência?</h5>
             <div class="in-2">
-                <label for="">Sim</label>
+                <label for="realizaS">Sim</label>
                 <input type="checkbox">
             </div>
             <div class="in-2">
-                <label for="">Não</label>
+                <label for="realizaN">Não</label>
                 <input type="checkbox">
             </div>
            </div>
@@ -132,90 +132,90 @@
                 <div class="in-33">
                     <h5>Possui doenças na família?</h5>
                     <div class="in-2">
-                        <label for="">Sim</label>
+                        <label for="possuiS">Sim</label>
                         <input type="checkbox">
                     </div>
                     <div class="in-2">
-                        <label for="">Não</label>
+                        <label for="possuiN">Não</label>
                         <input type="checkbox">
                     </div>
                 </div>
                 <div class="inputs-d">
-                    <label for="doen">Se sim, qual(is)?</label>
-                    <input type="text">
+                    <label for="seSim">Se sim, qual(is)?</label>
+                    <input type="text" placeholder="Explique...">
                 </div>
             </div>
             <div class="cont-f3">
                 <div class="in-33">
                     <h5>Possui doença diagnosticada?</h5>
                     <div class="in-2">
-                        <label for="">Sim</label>
+                        <label for="diagnosticcadaS">Sim</label>
                         <input type="checkbox">
                     </div>
                     <div class="in-2">
-                        <label for="">Não</label>
+                        <label for="diagnosticcadaN">Não</label>
                         <input type="checkbox">
                     </div>
                 </div>
                 <div class="inputs-d">
-                    <label for="doen">Se sim, qual(is)?</label>
-                    <input type="text">
+                    <label for="dSeSim">Se sim, qual(is)?</label>
+                    <input type="text" placeholder="Explique...">
                 </div>
             </div>
             <div class="cont-f3">
                 <div class="in-33">
                     <h5>Possui algum incomodo que deseja relatar? (Ex.: dores no peito; dores nas articulações; dificuldade em respirar; pressão muito elevada após exercícios; etc.):</h5>
                     <div class="in-2">
-                        <label for="">Sim</label>
+                        <label for="incomodoS">Sim</label>
                         <input type="checkbox">
                     </div>
                     <div class="in-2">
-                        <label for="">Não</label>
+                        <label for="IncomodoN">Não</label>
                         <input type="checkbox">
                     </div>
                 </div>
                 <div class="inputs-d">
-                    <label for="doen">Se sim, qual(is)?</label>
-                    <input type="text">
+                    <label for="incomodoSeSim">Se sim, qual(is)?</label>
+                    <input type="text" placeholder="Explique...">
                 </div>
             </div>
             <div class="cont-f3">
                 <div class="in-33">
                     <h5>Já utilizou algum ergogênico? (Ex.: estimulantes; esteróides; etc)</h5>
                     <div class="in-2">
-                        <label for="">Sim</label>
+                        <label for="ergoS">Sim</label>
                         <input type="checkbox">
                     </div>
                     <div class="in-2">
-                        <label for="">Não</label>
+                        <label for="ergoN">Não</label>
                         <input type="checkbox">
                     </div>
                 </div>
                 <div class="inputs-d">
-                    <label for="doen">Se sim, qual(is)?</label>
-                    <input type="text">
+                    <label for="ergoSeSim">Se sim, qual(is)?</label>
+                    <input type="text" placeholder="Explique...">
                 </div>
                 <div class="inputs-d">
-                    <label for="doen">
+                    <label for="relatarConsumo">
                         Relate o processo de ultilização, a quanto tempo foi e por quanto tempo durou:</label>
-                    <input type="text">
+                    <input type="text" placeholder="Explique...">
                 </div>
             </div>
             <div class="cont-f3">
                 <div class="in-33">
                     <h5>Faz uso de remédios controlados? Ex.: benzodiazepínicos, anticoncepcionais, remédios para pressão no geral, etc.</h5>
                     <div class="in-2">
-                        <label for="">Sim</label>
+                        <label for="controladosS">Sim</label>
                         <input type="checkbox">
                     </div>
                     <div class="in-2">
-                        <label for="">Não</label>
+                        <label for="controladosN">Não</label>
                         <input type="checkbox">
                     </div>
                 </div>
                 <div class="inputs-d">
-                    <label for="doen">Se sim, qual(is)?</label>
-                    <input type="text">
+                    <label for="controladosSeSim">Se sim, qual(is)?</label>
+                    <input type="text" placeholder="Explique...">
                 </div>
             </div>
         </fieldset>
@@ -280,11 +280,11 @@
             </div>
             <div class="inputs-d f4 f5">
                 <label for="alergia">Quantas refeições costuma fazer diariamente?</label>
-                <input type="number">
+                <input type="number" placeholder="Em Números. Ex.: 3">
             </div>
             <div class="inputs-d f4 f5">
                 <label for="alergia">Quantas refeições, de acordo com tua rotina de vida e trabalho, ficariam confortáveis para teu planjamento?</label>
-                <input type="number">
+                <input type="number" placeholder="Em Números. Ex.: 3">
             </div>
             <div class="obs">
                 <h4>Observações:</h4>
