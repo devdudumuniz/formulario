@@ -22,6 +22,7 @@
     --font-label:'Lato', sans-serif;
     --font-footer:'EB Garamond', serif;
     --font-anamnese: 'Caveat', cursive;
+    
     /*cores*/
     --cor1: #167758;
     --cor2: #008753;
@@ -153,15 +154,18 @@ i{
     }
     .inputs-d{
         width: 98%;
-        margin: 1% auto;
+        margin: 2% auto;
+    }
+    .primeiro-input{
+        margin-top: 10%;
     }
     .inputs-d input{
-        margin: auto;
+        margin: 1.5% auto;
         width: 100%;
     }
     h5{
         width: 98%;
-        margin: 1% auto;
+        margin: 3% auto;
         font-size: var(--font-label);
     }
     sup{
@@ -198,7 +202,7 @@ i{
     .check1{
         margin: 0 2%;
         justify-content: space-between;
-        width: 40%;
+        width: 50%;
         display: flex;
     }
     .check1 > input{
@@ -209,18 +213,21 @@ i{
 
 /*fieldset 2*/
     .cont-f2{
+        display: block;
         width: 98%;
-        margin: 5% auto;
     }
     .cont-f3{
         width: 98%;
         margin: 5% auto;
         display: block;
     }
+    .cont-f3 > .inputs-d > label{
+        margin-top: 5%;
+    }
     .in-2{
         margin: 0 2%;
         display: flex;
-        width: 40%;
+        width: 60%;
     }
     .in-33{
         width: 100%;
@@ -229,7 +236,7 @@ i{
         margin: 3% auto;
     }
     .in-5{
-        width: 50%;
+        width: 60%;
     }
     .in-6{
         margin-top: 2%;
@@ -244,7 +251,7 @@ i{
     }
     h4{
         word-wrap: break-word;
-        margin-left: 1%;
+        margin-left: 2%;
         font-size: var(--font-titulos);
     }
     .cont-obs{
@@ -256,12 +263,22 @@ i{
         margin: auto;
         width: 48%;
     }
+    .obs2 > label{
+        margin: auto;
+        display: block;
+        height: 15vw;
+    }
     textarea{
-        min-height: 10vw;
-        min-width: 100%;
+        height: 10vh;
+        width: 45vw;
+        display: flex;
     }
     .cont-field4{
         margin: 3% auto;
+    }
+    .cont-field4 > input{
+        height: 5vw;
+        margin: 5% auto;
     }
     .botoes{
         margin: 5% auto;
@@ -741,5 +758,4 @@ i{
     -ms-border-radius:;
     -o-border-radius:;
     }
-
 }
