@@ -6,6 +6,7 @@
 
 /*Variáveis*/
 :root{
+
     /*tamanhos*/
     --tam-enviar: clamp(0.5vw, 3.5vw, 6vw);
     --tam-anamnese:clamp(0.5vw, 7vw, 9vw);
@@ -16,13 +17,12 @@
     --tam-iconesP: clamp(0.5vw, 2vw, 5vw);
     --tam-footer: clamp(0.5vw, 1.5vw, 4vw);
 
-
     /*font-family*/
     --font-titulos: 'Lora', serif;
     --font-label:'Lato', sans-serif;
     --font-footer:'EB Garamond', serif;
     --font-anamnese: 'Caveat', cursive;
-    
+
     /*cores*/
     --cor1: #167758;
     --cor2: #008753;
@@ -182,7 +182,7 @@ i{
         background-color: var(--cor-inputs);
         display: flex;
         margin: auto;
-        height: 5vw;
+        height: var(--tam-anamnese);
         width: 98%;
         border-radius: 2px;
         -webkit-border-radius: 2px;
@@ -202,7 +202,7 @@ i{
     .check1{
         margin: 0 2%;
         justify-content: space-between;
-        width: 50%;
+        width: 60%;
         display: flex;
     }
     .check1 > input{
@@ -277,7 +277,7 @@ i{
         margin: 3% auto;
     }
     .cont-field4 > input{
-        height: 5vw;
+        height: var(--tam-anamnese);
         margin: 5% auto;
     }
     .botoes{
